@@ -1,0 +1,20 @@
+$(function(){
+    $(".kategori-left li").hover(function(){
+        $(this).toggleClass("bg-light");
+    });
+    $(".sosyal-item").hover(function(){
+        $(this).toggleClass("shadow");
+    });
+    $(".btn-responsive").click(function(){
+        $(".non-responsive").toggle();
+    });
+    $(".kategori-down").click(function(){
+        $(".kategori-ul").toggle("slow","ease");
+        $(".kategori-down").toggleClass("kategori-down-up");
+    });
+    $(".sosyal-ok").click(function(){
+        $("#sosyal-ul").toggle();
+        $(this).toggleClass("shadow");
+        $(this).toggleClass("sosyal-ok-opacity");
+    });
+});
